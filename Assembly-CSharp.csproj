@@ -53,14 +53,24 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Player\UIcontroller.cs" />
-     <Compile Include="Assets\LoadResolution.cs" />
+     <Compile Include="Assets\Script\TreeLifeForest.cs" />
+     <Compile Include="Assets\Script\Quest.cs" />
+     <Compile Include="Assets\Script\LoadResolution.cs" />
      <Compile Include="Assets\Player\CharacterCameraRound.cs" />
+     <Compile Include="Assets\Script\ResetearPosicion.cs" />
      <Compile Include="Assets\Player\Character.cs" />
-     <Compile Include="Assets\ConfigureScript.cs" />
+     <Compile Include="Assets\Script\RopeLife.cs" />
+     <Compile Include="Assets\Script\bagController.cs" />
+     <Compile Include="Assets\Script\ConfigureScript.cs" />
      <Compile Include="Assets\Player\ControlCharacter.cs" />
-     <Compile Include="Assets\Configure.cs" />
-     <Compile Include="Assets\SaveLoad.cs" />
-     <Compile Include="Assets\CharacterManage.cs" />
+     <Compile Include="Assets\Script\RockLife.cs" />
+     <Compile Include="Assets\Script\Configure.cs" />
+     <Compile Include="Assets\Script\HoraTime.cs" />
+     <Compile Include="Assets\Script\CharacterManage.cs" />
+     <Compile Include="Assets\Script\SaveLoad.cs" />
+     <Compile Include="Assets\Script\ControlKeyboard.cs" />
+     <Compile Include="Assets\Script\TreeLife.cs" />
+     <None Include="Assets\NatureStarterKit2\info.txt" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -628,6 +638,9 @@
  <Reference Include="System.Xml.Serialization">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ShaderGraph.Editor">
+ <HintPath>D:/documentos/Unity work/ExamenFinal/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>D:/documentos/Unity work/ExamenFinal/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
@@ -636,6 +649,9 @@
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>D:/documentos/Unity work/ExamenFinal/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+ <HintPath>D:/documentos/Unity work/ExamenFinal/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/documentos/Unity work/ExamenFinal/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -646,11 +662,23 @@
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/documentos/Unity work/ExamenFinal/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Searcher.Editor">
+ <HintPath>D:/documentos/Unity work/ExamenFinal/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Runtime">
+ <HintPath>D:/documentos/Unity work/ExamenFinal/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
  <HintPath>D:/documentos/Unity work/ExamenFinal/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>D:/documentos/Unity work/ExamenFinal/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+ <HintPath>D:/documentos/Unity work/ExamenFinal/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Editor">
+ <HintPath>D:/documentos/Unity work/ExamenFinal/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

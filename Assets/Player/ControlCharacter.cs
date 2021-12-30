@@ -69,8 +69,7 @@ public class ControlCharacter : MonoBehaviour
     }
 
     public void SaveUbicacion() {
-        Character.Personaje saveGps = new Character.Personaje();
         Vector3 gps = transform.position;
-        saveGps.setUbicacion(gps);
+        Character.saveUbicacion(gps.x,gps.y,gps.z);
     }
 }

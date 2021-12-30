@@ -330,6 +330,9 @@
  <Reference Include="log4netPlastic">
  <HintPath>D:/documentos/Unity work/ExamenFinal/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
  </Reference>
+ <Reference Include="ICSharpCode.NRefactory">
+ <HintPath>D:/documentos/Unity work/ExamenFinal/Library/PackageCache/com.unity.render-pipelines.core@10.6.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+ </Reference>
  <Reference Include="unityplastic">
  <HintPath>D:/documentos/Unity work/ExamenFinal/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
