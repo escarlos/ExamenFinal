@@ -11,8 +11,10 @@ ScriptsOnlyBuild:
     - LoadResolution
     - Quest
     - ResetearPosicion
+    - RockLife
     - RopeLife
     - SaveLoad
+    - SpawnRock
     - TreeLife
     - UIcontroller
     - bagController
@@ -150,6 +152,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5094}
     - Class: 114
+      Script: {instanceID: 5146}
+    - Class: 114
       Script: {instanceID: 5314}
     - Class: 114
       Script: {instanceID: 5382}
@@ -159,6 +163,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5920}
     - Class: 114
       Script: {instanceID: 6220}
+    - Class: 114
+      Script: {instanceID: 36724}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -174,6 +180,10 @@ ScriptsOnlyBuild:
     - Class: 193
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 205
       Script: {instanceID: 0}
@@ -205,6 +215,8 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -239,6 +251,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3416}
     - Class: 114
+      Script: {instanceID: 3562}
+    - Class: 114
       Script: {instanceID: 3738}
     - Class: 114
       Script: {instanceID: 3742}
@@ -259,6 +273,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5094}
     - Class: 114
+      Script: {instanceID: 5146}
+    - Class: 114
       Script: {instanceID: 5314}
     - Class: 114
       Script: {instanceID: 5382}
@@ -268,6 +284,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 5920}
     - Class: 114
       Script: {instanceID: 6220}
+    - Class: 114
+      Script: {instanceID: 36724}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -283,6 +301,10 @@ ScriptsOnlyBuild:
     - Class: 193
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 205
       Script: {instanceID: 0}
@@ -1022,7 +1044,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 4a21e3b11ea3adeab6af8f5e1faa742f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RockLife
@@ -1130,7 +1152,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerFoldout
   - hash:
       serializedVersion: 2
-      Hash: e78c9319bc8a20856e9fa03436dd109b
+      Hash: 41b9c07fac4017610358da4937654022
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ControlKeyboard
@@ -1164,6 +1186,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TreeLife
+  - hash:
+      serializedVersion: 2
+      Hash: 3cca61b7d430ec4bc4546edfbb42dee5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpawnRock
   platform: 19
   scenePathNames:
   - Assets/Scenes/PlayGame.unity

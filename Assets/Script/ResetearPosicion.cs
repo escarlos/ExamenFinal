@@ -11,8 +11,9 @@ public class ResetearPosicion : MonoBehaviour
       if (other.tag == "Player") {
          Character.DamageLife(10);
          StartCoroutine(mostrar("", 10));
+         other.GetComponent<CharacterController>().enabled = false;
          other.transform.position = spawn.transform.position;
-
+         other.GetComponent<CharacterController>().enabled = true;
       }
    }
    IEnumerator mostrar(string item, float cantidad) {

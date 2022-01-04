@@ -70,6 +70,7 @@
      <Compile Include="Assets\Script\SaveLoad.cs" />
      <Compile Include="Assets\Script\ControlKeyboard.cs" />
      <Compile Include="Assets\Script\TreeLife.cs" />
+     <Compile Include="Assets\Script\SpawnRock.cs" />
      <None Include="Assets\NatureStarterKit2\info.txt" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

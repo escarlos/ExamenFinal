@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ControlKeyboard : MonoBehaviour
@@ -8,13 +9,14 @@ public class ControlKeyboard : MonoBehaviour
     public bool prestE = false;
 
     public Collider colision;
-    public Collider colision2;
-    public Collider colision3;
     // Start is called before the first frame update
     void Start()
     {
         Character.nombreItem = new List<string>();
         Character.cantidadItem = new List<int>();
+        if (SceneManager.GetActiveScene().name == "Floor02") {
+            transform.GetChild(0).gameObject.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -51,13 +53,21 @@ public class ControlKeyboard : MonoBehaviour
                                 Debug.Log("mandamos a llamar desde Cuerda");
                         }
                         break;
+                    case "Rock":
+                        if (colision.GetComponent<RockLife>().cantidadRock > 0) {
+                            Character.addInventory("Rock", 1);
+                            colision.GetComponent<RockLife>().removeRock();
+                            StartCoroutine(agregarItem("Rock", 1));
+                            Debug.Log("mandamos a llamar desde rock");
+                        }
+                        break;
                 }
             }
         }
     }
     
     private void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("Tree") || other.CompareTag("Rope")) {
+        if (other.CompareTag("Tree") || other.CompareTag("Rope") || other.CompareTag("Rock") ) {
             GameObject.FindWithTag("UI").transform.GetChild(2).gameObject.SetActive(true);
             prestE = true;
             if (other.CompareTag("Tree")) { 
@@ -67,6 +77,7 @@ public class ControlKeyboard : MonoBehaviour
                 colision = other;
             }
             if (other.CompareTag("Rock")) {
+                Debug.Log("rock");
                 colision = other;
             }
            
@@ -76,12 +87,10 @@ public class ControlKeyboard : MonoBehaviour
     }
 
     private void OnTriggerExit(Collider other) {
-        if (other.CompareTag("Tree") || other.CompareTag("Rope") ) {
+        if (other.CompareTag("Tree") || other.CompareTag("Rope") || other.CompareTag("Rock")  ) {
             GameObject.FindWithTag("UI").transform.GetChild(2).gameObject.SetActive(false);
             prestE = false;
             colision = null;
-            colision2 = null;
-            colision3 = null;
         }
     }
 

@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class RockLife : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int cantidadRock = 1;
 
-    // Update is called once per frame
-    void Update()
-    {
+    public void removeRock() {
+        if (cantidadRock > 0) { 
+            cantidadRock -= 1;
+        }
         
     }
 }
