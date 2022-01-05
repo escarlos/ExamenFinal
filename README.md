@@ -29,9 +29,14 @@ por el profesor a cargo en un plazo fijo de un mes, logrando completar esta fase
 
 ## Jugabilidad
 
+> El jugador debera ir recogiendo item que son indicados por la Quest de cada escenario, se debera estar pendiente de
+> que no baje la resistencia, aunque por ahora no produce efecto negativo pero se debera tener cuidado mas adelante,
+> tambien al caer el jugador recibira daño y volvera a su punto de partida.
 > - Los movimientos basicos son con : W,S,A,D en los cuales podras moverte hacia delante, atras, derecha e izquierda.
 > - Puntero del mouse : El cual dictaminara la direccion de moverte hacia delante.
 > - Salto : por ahora no tiene un uso grande pero con la tecla espaciadora se puede saltar.
+> - Recoger objeto : Se debera presionar la letra E cuando el sistema te lo indique, no se podra recoger un item de un 
+> objeto ya recogido.
 
 ## UI Jugador
 
