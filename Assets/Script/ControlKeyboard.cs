@@ -55,9 +55,9 @@ public class ControlKeyboard : MonoBehaviour
                         break;
                     case "Rock":
                         if (colision.GetComponent<RockLife>().cantidadRock > 0) {
-                            Character.addInventory("Rock", 1);
+                            Character.addInventory("Roca", 1);
                             colision.GetComponent<RockLife>().removeRock();
-                            StartCoroutine(agregarItem("Rock", 1));
+                            StartCoroutine(agregarItem("Roca", 1));
                             Debug.Log("mandamos a llamar desde rock");
                         }
                         break;
@@ -68,8 +68,14 @@ public class ControlKeyboard : MonoBehaviour
     
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Tree") || other.CompareTag("Rope") || other.CompareTag("Rock") ) {
-            GameObject.FindWithTag("UI").transform.GetChild(2).gameObject.SetActive(true);
-            prestE = true;
+            bool scenaActive = false;
+            if (SceneManager.GetActiveScene().name == "Floor02" && (other.CompareTag("Tree") || other.CompareTag("Rock"))) {
+                scenaActive = true;
+            }else if (SceneManager.GetActiveScene().name == "Floor01" && (other.CompareTag("Tree") || other.CompareTag("Rope"))) {
+                scenaActive = true;
+            }
+            GameObject.FindWithTag("UI").transform.GetChild(2).gameObject.SetActive(scenaActive);
+            prestE = scenaActive;
             if (other.CompareTag("Tree")) { 
                 colision = other;
             }

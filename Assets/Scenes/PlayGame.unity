@@ -158,10 +158,10 @@ RectTransform:
   m_Father: {fileID: 973383846}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.6384836}
-  m_AnchoredPosition: {x: 0, y: 202}
-  m_SizeDelta: {x: 160, y: -79}
+  m_AnchorMin: {x: 0.40130118, y: 0.5}
+  m_AnchorMax: {x: 0.591, y: 0.6384836}
+  m_AnchoredPosition: {x: 4.5, y: 202}
+  m_SizeDelta: {x: -23, y: -79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &33755935
 MonoBehaviour:
@@ -524,10 +524,10 @@ RectTransform:
   m_Father: {fileID: 973383846}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 197}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0.41358897, y: 0.721}
+  m_AnchorMax: {x: 0.591, y: 0.782538}
+  m_AnchoredPosition: {x: -2, y: -1.5}
+  m_SizeDelta: {x: -10, y: -19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &281124868
 MonoBehaviour:
@@ -2616,6 +2616,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539018484}
   m_CullTransparentMesh: 1
+--- !u!1 &1610043876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1610043877}
+  - component: {fileID: 1610043879}
+  - component: {fileID: 1610043878}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1610043877
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610043876}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1741016715}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.21873948}
+  m_AnchorMax: {x: 0.93100005, y: 1}
+  m_AnchoredPosition: {x: 33.144, y: 2.649002}
+  m_SizeDelta: {x: 66.264, y: -5.257}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1610043878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610043876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 58
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 58
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'TUTORIAL INDICADO EN GITHUB
+
+    https://github.com/escarlos/ExamenFinal'
+--- !u!222 &1610043879
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610043876}
+  m_CullTransparentMesh: 1
 --- !u!1 &1628725045
 GameObject:
   m_ObjectHideFlags: 0
@@ -2898,7 +2979,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1610043877}
   m_Father: {fileID: 973383846}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3174,6 +3256,7 @@ MonoBehaviour:
   fullScreenTgl: {fileID: 148817430}
   sliderSoundBackground: {fileID: 712239810}
   soundBackground: {fileID: 963194229}
+  soundCry: {fileID: 0}
   responseConfiguration: {fileID: 1780270983}
 --- !u!224 &1822770213 stripped
 RectTransform:
@@ -3711,10 +3794,10 @@ RectTransform:
   m_Father: {fileID: 973383846}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 20, y: -109}
-  m_SizeDelta: {x: 382.505, y: 65.173}
+  m_AnchorMin: {x: 0.3243834, y: 0.85800004}
+  m_AnchorMax: {x: 0.69624674, y: 0.95926905}
+  m_AnchoredPosition: {x: 10.5, y: -37}
+  m_SizeDelta: {x: 25.505005, y: -14.8270035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2135303378
 MonoBehaviour:
@@ -3743,7 +3826,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0

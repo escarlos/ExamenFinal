@@ -74,6 +74,15 @@ public class Character : MonoBehaviour {
         posY = gpsY;
         posZ = gpsZ;
     }
+
+    public static void aumentarExperiencia()
+    {
+        experiencia += 100;
+    }
+
+    public static void bajarResistencia() {
+        resistance -= 5;
+    }
     
     
     [Serializable]

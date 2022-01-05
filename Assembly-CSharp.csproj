@@ -63,6 +63,7 @@
      <Compile Include="Assets\Script\bagController.cs" />
      <Compile Include="Assets\Script\ConfigureScript.cs" />
      <Compile Include="Assets\Player\ControlCharacter.cs" />
+     <Compile Include="Assets\Script\SpawnRock.cs" />
      <Compile Include="Assets\Script\RockLife.cs" />
      <Compile Include="Assets\Script\Configure.cs" />
      <Compile Include="Assets\Script\HoraTime.cs" />
@@ -70,7 +71,6 @@
      <Compile Include="Assets\Script\SaveLoad.cs" />
      <Compile Include="Assets\Script\ControlKeyboard.cs" />
      <Compile Include="Assets\Script\TreeLife.cs" />
-     <Compile Include="Assets\Script\SpawnRock.cs" />
      <None Include="Assets\NatureStarterKit2\info.txt" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

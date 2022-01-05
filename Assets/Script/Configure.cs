@@ -17,6 +17,7 @@ public class Configure : MonoBehaviour
     public Toggle fullScreenTgl;
     public Slider sliderSoundBackground;
     public AudioSource soundBackground;
+    public AudioSource soundCry;
     public Text responseConfiguration;
     private int saveWidth;
     private int saveHeight;
@@ -65,6 +66,7 @@ public class Configure : MonoBehaviour
 
     public void CreatePlayer() {
         Character.nameStatic = namePersonaje.text;
+        PlayerPrefs.SetString("name",namePersonaje.text);
         SceneManager.LoadScene(1);
     }
 
@@ -143,10 +145,15 @@ public class Configure : MonoBehaviour
     }
 
     public void CambiarEscena() {
+        Character.aumentarExperiencia();
         SceneManager.LoadScene(2);
     }
     public void ExitGame() {
         Application.Quit();
+    }
+
+    public void GritarBtn() {
+        soundCry.Play();
     }
 
     private void ConfigureLoad() {

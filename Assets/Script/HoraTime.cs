@@ -14,12 +14,14 @@ public class HoraTime : MonoBehaviour
     public Text myText;
     private float TiempoFrameConTiempoScale = 0f;
     private float tiempoMostrarEnSegundos = 0F;
+    private float bajarResist;
     void Start()
     {
         //Escala de Tiempo Original
         tiempoMostrarEnSegundos = tiempoinicial;
-
         ActualizarReloj(tiempoinicial);
+        bajarResist = Random.Range(0, 30);
+        Debug.Log("Cuantos Segundos se baja resistencia "+bajarResist);
     }
 
     // Update is called once per frame
@@ -28,6 +30,8 @@ public class HoraTime : MonoBehaviour
         TiempoFrameConTiempoScale = Time.deltaTime * escalaDeTiempo;
         tiempoMostrarEnSegundos += TiempoFrameConTiempoScale;
         ActualizarReloj(tiempoMostrarEnSegundos);
+        bajarResist -= Time.deltaTime * escalaDeTiempo;
+        DownResistense();
     }
     
     public void ActualizarReloj(float tiempoEnSegundos) {
@@ -47,5 +51,13 @@ public class HoraTime : MonoBehaviour
 
         textoDelReloj = $"{hora}:{minutos} PM"; 
         myText.text = textoDelReloj;
+    }
+
+    public void DownResistense() {
+        if (bajarResist < 1) {
+            Character.bajarResistencia();
+            bajarResist = Random.Range(0, 30);
+        }
+        
     }
 }
